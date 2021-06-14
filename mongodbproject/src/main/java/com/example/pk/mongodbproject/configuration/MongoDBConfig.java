@@ -1,14 +1,11 @@
 package com.example.pk.mongodbproject.configuration;
 
-import com.example.pk.mongodbproject.document.Bike;
 import com.example.pk.mongodbproject.repository.BikeRepository;
-import org.springframework.boot.CommandLineRunner;
+import com.example.pk.mongodbproject.service.BikeService;
+import com.example.pk.mongodbproject.service.BikeServiceImp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-
-import java.sql.Date;
-
 
 @Configuration
 @EnableMongoRepositories(basePackageClasses = BikeRepository.class)

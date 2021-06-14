@@ -1,21 +1,17 @@
-package com.example.pk.mongodbproject.document;
+package com.example.demo.domain;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 import java.util.Date;
 
 @Getter
-@Setter
 @ToString
+@Setter
 @AllArgsConstructor
-@Document
 @NoArgsConstructor
-public class Bike implements Serializable {
+public class BikeSharingHourNotion implements Serializable {
 
-    @Id
     private Long instant;
     private Date dteday;
     private int season;
@@ -33,5 +29,4 @@ public class Bike implements Serializable {
     private int casual;
     private int registered;
     private int cnt;
-
 }
